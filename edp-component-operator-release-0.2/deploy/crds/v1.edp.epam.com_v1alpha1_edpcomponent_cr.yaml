@@ -1,0 +1,8 @@
+apiVersion: v1.edp.epam.com/v1alpha1
+kind: EDPComponent
+metadata:
+  name: example-edpcomponent
+spec:
+  type: jenkins
+  url: https://example-jenkins
+  icon: base64encode

@@ -1,0 +1,27 @@
+edp:
+  name: "edp"
+  # platform: "openshift"
+  platform: "kubernetes"
+  version: "epamedp/edp-install:2.3.0"
+  additionalToolsTemplate: "additional-tools"
+  superAdmins: "mec.sh.infra@gmail.com"
+  admins: "mec.sh.infra@gmail.com"
+  viewers: "mec.sh.infra@gmail.com"
+  dnsWildCard: "mec.softwaredev.link"
+  storageClass: "gp2"
+  devDeploy: "false"
+  keycloakNamespace: "security"
+  keycloakUrl: "https://keycloak-security.mec.softwaredev.link"
+  webConsole: "https://console.mec.softwaredev.link"
+jenkins:
+  version: "epamedp/edp-jenkins:2.3.0"
+  volumeCapacity: "10Gi"
+  stagesVersion: "release-2.4"
+  pipelinesVersion: "release-2.4"
+  initImage: "busybox"
+adminConsole:
+  version: "epamedp/edp-admin-console:2.3.0"
+perf:
+  enabled: "false"
+  nodeId: ""
+  url: ""

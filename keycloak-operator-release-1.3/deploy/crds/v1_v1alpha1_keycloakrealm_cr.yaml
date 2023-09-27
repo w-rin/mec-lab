@@ -1,0 +1,13 @@
+apiVersion: v1.edp.epam.com/v1alpha1
+kind: KeycloakRealm
+metadata:
+  name: main
+spec:
+  realmName: example-edp-cicd.main
+  ssoRealmName: openshift
+  users:
+    - username: test_user@edp.epam.com
+      roles:
+        - Administrator
+status:
+  available: false

@@ -1,0 +1,6 @@
+name: admin-console-operator
+namespace: ""
+platform: "openshift"
+image:
+  name: epamedp/admin-console-operator
+  version: v2.3.0

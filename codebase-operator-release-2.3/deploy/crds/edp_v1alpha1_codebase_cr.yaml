@@ -1,0 +1,27 @@
+apiVersion: v2.edp.epam.com/v1alpha1
+kind: Codebase
+metadata:
+  name: test-npm
+spec:
+  lang: "Javascript"
+  type: "application"
+  description: "My app"
+  framework: "React"
+  testReportFramework: "allure"
+  buildTool: "NPM"
+  strategy: "create"
+  versioning:
+    type: "edp"
+    startFrom: "0.0.1"
+  git:
+    url: "https://git.epam.com/epmd-edp/examples/basic/edp-react-helloworld.git"
+  route:
+    site: "helloworld"
+    path: "/api"
+  data:
+    key: "c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCZ1FEU1k4M3g0MWpzTkxvanRwUGZBTnphMVdIZlNYZVJvOHU0a0JURmQ1Smh5Z2R3UHNsSHk5UUMxZUxtclJtb1MyN2tHOGdtTVhrVUZsdEJFTURhdE1ZQmtkL3Vac0M0NjV5RndHY04xZXdyYlB3OVlBOExkbERsc1dEYnl5MEx1SVhYNlF3TmxqQytQOTUyWVpGNFd5azIwV2lRVyt0eG9HV1RMekJMMksvN0FqaHMvM0h2N2JoVEE2Sm1yYTF5QzB0L1d0ZzZVb1kwM3V6bnZCMElhamMyWWdCWEQ2SjJzYTFuV2FEMzNIY1ltb2ZKQkN5cHRKWjRnRzhtbkxQc2JnaXI1dnh1MnQzNmRBZEhmZWJ1ZFlSMTNCTTlaTUNMOGVGWk5Ga0R4eDN6QkdNRk5zUVR5WkpUcUlyUzFOclJ0ZFV4QTFUcEwva0NPOWdkcWxjcHlpWndSOHBNSUxycnRXM241Ymc3OWFhZy9CVURPVk5hV1duNmk0VFhwbjRQWi9ITVIyc3d2S2tmUnVQZGFiKzlJWFJCZERHWnFKY0t3ZFEvR0JTM1h6VG5kMVVyZDBxdmI1azcvN3ZsRloxOExZZy9aaVZwbldGSDVYRHM5VTRBKzI1Tmp2SWZkQm82elNLMWJiSkcvUndyWWJrM1VJeU5Gd3MxRDdKY0drN0h5ZWs9IHJvb3RATEFQVE9QLUpDTkJKUDEx"
+    name: "gitlab-sshkey"
+status:
+  status: "initialized"
+  available: false
+  LastTimeUpdated: 0001-01-01T00:00:00Z

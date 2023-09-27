@@ -1,0 +1,10 @@
+name: reconciler
+namespace: ""
+platform: "openshift"
+database:
+  host: edp-install-wizard-db
+  name: edp-install-wizard-db
+  port: 5432
+image:
+  name: epamedp/reconciler
+  version: v2.3.0
